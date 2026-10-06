@@ -10,11 +10,11 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- Header / Navbar (светлый, как был) -->
+    <!-- Header / Navbar) -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/">Navbar</a>
+                <a class="navbar-brand" href="/">Навигация</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,7 +27,14 @@
                             <a class="nav-link" href="{{ url('/contact') }}">Контакты</a>
                         </li>
                     </ul>
-                </div>
+                </div> 
+                <div class="navbar-nav d-flex jusify-content-end">
+                <li class="nav-item">
+                    <a class="nav-item" href="/signup">SignUp</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item" href="/auth/login">Signin</a>
+                </li>
             </div>
         </nav>
     </header>
@@ -39,7 +46,7 @@
         </div>
     </main>
 
-    <!-- Footer (просто серый текст внизу) -->
+    
     <footer class="text-center py-3 mt-auto">
         <p class="text-muted mb-0">Выполнил: Гончарюк Вадим | Группа: 251-3210</p>
     </footer>

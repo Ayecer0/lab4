@@ -2,6 +2,6 @@
 
 @section('content')
     <p>
-        We create project for laravel!
+        Я создал проект на Laravel!
     </p>
 @endsection

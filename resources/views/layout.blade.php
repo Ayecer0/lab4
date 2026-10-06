@@ -26,6 +26,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/contact') }}">Контакты</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/show">Articles</a>
+                        </li>
                     </ul>
                 </div> 
                 <div class="navbar-nav d-flex jusify-content-end">

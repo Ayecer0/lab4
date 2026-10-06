@@ -1,10 +1,11 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
-
+Route::get('articles/show', [ArticleController::class, 'index']);
 Route::get('/signup',[AuthController::class, 'create']);
 Route::post('/auth/login',[AuthController::class, 'signup']);
 Route::get('/', [MainController::class, 'index']);

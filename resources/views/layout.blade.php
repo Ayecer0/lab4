@@ -31,14 +31,14 @@
                         </li>
                     </ul>
                 </div> 
-                <div class="navbar-nav d-flex jusify-content-end">
-                <li class="nav-item">
-                    <a class="nav-item" href="/signup">SignUp</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item" href="/auth/login">Signin</a>
-                </li>
-            </div>
+                <div class="d-flex gap-2 ms-auto">
+    <a href="/auth/login" class="btn btn-outline-secondary btn-sm">
+        <i class="bi bi-box-arrow-in-right"></i> Войти
+    </a>
+    <a href="/signup" class="btn btn-primary btn-sm">
+        <i class="bi bi-person-plus"></i> Регистрация
+    </a>
+</div>
         </nav>
     </header>
 

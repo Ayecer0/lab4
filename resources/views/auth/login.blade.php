@@ -6,16 +6,11 @@
         <div class="col-md-6 col-lg-5">
             <div class="card shadow-sm border-0">
                 <div class="card-body p-4">
-                    <h3 class="text-center mb-1">Регистрация</h3>
-                    <p class="text-center text-muted mb-4">Создайте новый аккаунт</p>
+                    <h3 class="text-center mb-1">Вход</h3>
+                    <p class="text-center text-muted mb-4">Войдите в свой аккаунт</p>
 
-                    <form method="POST" action="/signup">
+                    <form method="POST" action="/auth/login">
                         @csrf
-
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Имя</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Введите ваше имя" required>
-                        </div>
 
                         <div class="mb-3">
                             <label for="email" class="form-label">Email адрес</label>
@@ -24,14 +19,14 @@
 
                         <div class="mb-4">
                             <label for="password" class="form-label">Пароль</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Придумайте пароль" required>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Введите пароль" required>
                         </div>
 
-                        <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+                        <button type="submit" class="btn btn-dark w-100">Войти</button>
                     </form>
 
                     <p class="text-center mt-4 mb-0">
-                        Уже есть аккаунт? <a href="/auth/login">Войти</a>
+                        Нет аккаунта? <a href="/signup">Зарегистрироваться</a>
                     </p>
                 </div>
             </div>

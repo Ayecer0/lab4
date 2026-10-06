@@ -5,12 +5,18 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('articles/show', [ArticleController::class, 'index']);
-Route::get('/signup',[AuthController::class, 'create']);
-Route::post('/auth/login',[AuthController::class, 'signup']);
 Route::get('/', [MainController::class, 'index']);
 Route::get('/galery/{full_image}', [MainController::class, 'show']);
-Route::get('/auth/login', [AuthController::class, 'create']);
+
+Route::get('articles/show', [ArticleController::class, 'index']);
+
+// регистрация
+Route::get('/signup', [AuthController::class, 'create']);
+Route::post('/signup', [AuthController::class, 'signup']);
+
+// вход
+Route::get('/auth/login', [AuthController::class, 'login']);
+Route::post('/auth/login', [AuthController::class, 'signin']);
 
 Route::get('/about', function () {
     return view('main.about');
